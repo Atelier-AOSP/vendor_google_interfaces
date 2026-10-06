@@ -26,4 +26,6 @@ interface IFingerprintExt {
   oneway void onPointerUpWithContext(in long requestId, in int displayId, in int pointerId, in float x, in float y, in float minor, in float major, in float orientation, in long downTime, in long eventTime, in boolean isAod);
   oneway void onPointerCancel();
   oneway void onPreEnroll(in com.google.hardware.biometrics.fingerprint.ICalibrationCallback callback);
+  oneway void onUserProvideScreenProtectorInfo(in int screenProtectorHal);
+  oneway void requestHareConfig(in com.google.hardware.biometrics.fingerprint.IHareConfigCallback callback);
 }

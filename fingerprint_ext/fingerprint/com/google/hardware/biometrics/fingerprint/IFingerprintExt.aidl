@@ -1,6 +1,7 @@
 package com.google.hardware.biometrics.fingerprint;
 
 import com.google.hardware.biometrics.fingerprint.ICalibrationCallback;
+import com.google.hardware.biometrics.fingerprint.IHareConfigCallback;
 
 @VintfStability
 oneway interface IFingerprintExt {
@@ -22,4 +23,8 @@ oneway interface IFingerprintExt {
     void onPointerCancel();
 
     void onPreEnroll(in ICalibrationCallback callback);
+
+    void onUserProvideScreenProtectorInfo(in int screenProtectorHal);
+
+    void requestHareConfig(in IHareConfigCallback callback);
 }
