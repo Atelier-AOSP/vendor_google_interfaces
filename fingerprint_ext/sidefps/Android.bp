@@ -1,0 +1,24 @@
+aidl_interface {
+    name: "com.google.hardware.biometrics.sidefps.fingerprint-ext",
+
+    srcs: [
+        "com/google/hardware/biometrics/sidefps/*.aidl",
+    ],
+
+    stability: "vintf",
+    owner: "google",
+
+    backend: {
+        cpp: {
+            enabled: false,
+        },
+        java: {
+            enabled: true,
+            platform_apis: true,
+        },
+        ndk: {
+            enabled: false,
+        },
+    },
+    frozen: false,
+}
