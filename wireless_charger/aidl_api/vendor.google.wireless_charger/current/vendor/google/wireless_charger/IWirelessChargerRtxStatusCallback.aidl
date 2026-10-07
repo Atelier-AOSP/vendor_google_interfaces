@@ -19,5 +19,5 @@
 package vendor.google.wireless_charger;
 @VintfStability
 interface IWirelessChargerRtxStatusCallback {
-  void rtxStatusInfoChanged(in vendor.google.wireless_charger.RtxStatusInfo info);
+  oneway void rtxStatusInfoChanged(in vendor.google.wireless_charger.RtxStatusInfo info);
 }

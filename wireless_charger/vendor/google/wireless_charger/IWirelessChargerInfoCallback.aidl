@@ -4,5 +4,5 @@ import vendor.google.wireless_charger.AlignInfo;
 
 @VintfStability
 interface IWirelessChargerInfoCallback {
-    void alignInfoChanged(in AlignInfo info);
+    oneway void alignInfoChanged(in AlignInfo info);
 }

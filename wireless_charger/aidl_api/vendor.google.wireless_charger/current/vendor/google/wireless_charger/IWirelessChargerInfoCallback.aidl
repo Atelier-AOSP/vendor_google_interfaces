@@ -19,5 +19,5 @@
 package vendor.google.wireless_charger;
 @VintfStability
 interface IWirelessChargerInfoCallback {
-  void alignInfoChanged(in vendor.google.wireless_charger.AlignInfo info);
+  oneway void alignInfoChanged(in vendor.google.wireless_charger.AlignInfo info);
 }

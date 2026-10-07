@@ -4,5 +4,5 @@ import vendor.google.wireless_charger.RtxStatusInfo;
 
 @VintfStability
 interface IWirelessChargerRtxStatusCallback {
-    void rtxStatusInfoChanged(in RtxStatusInfo info);
+    oneway void rtxStatusInfoChanged(in RtxStatusInfo info);
 }
